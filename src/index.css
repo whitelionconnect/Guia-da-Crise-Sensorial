@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Fraunces', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+.font-display {
+  font-family: var(--font-serif);
+}
+
+@keyframes shimmerEffect {
+  0% {
+    transform: translateX(-150%) skewX(-25deg);
+  }
+  40%, 100% {
+    transform: translateX(250%) skewX(-25deg);
+  }
+}
+
+@keyframes pulseGlowEffect {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7), 0 10px 25px -5px rgba(22, 101, 52, 0.5), 0 8px 10px -6px rgba(22, 101, 52, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(34, 197, 94, 0), 0 20px 35px -5px rgba(22, 101, 52, 0.65), 0 12px 14px -6px rgba(22, 101, 52, 0.6);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmerEffect 2.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlowEffect 2s infinite ease-in-out;
+}

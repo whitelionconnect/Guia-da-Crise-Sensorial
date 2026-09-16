@@ -1,0 +1,8 @@
+{
+  "name": "Remix Guia da Crise Sensorial",
+  "description": "Protocolo prático de 3 passos para mães e pais de crianças autistas manejarem crises sensoriais com calma, segurança e em menos de 10 minutos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
